@@ -14,5 +14,22 @@
       width: 100%;
     }
   }
-
+  &__descr {
+    padding-top: 6px;
+    .divider {
+      margin-top: 0;
+    }
+  }
+  &__title {
+    position: relative;
+    padding: 1px 0 0 12px;
+    @include before_circle
+  }
+  &__text {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
 }
