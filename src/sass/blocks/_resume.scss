@@ -42,7 +42,7 @@
         &:after {
           content: '';
           width: 1px;
-          height: 100%;
+          height: calc(100% + 9px);
           position: absolute;
           top: -9px;
           left: 0;
@@ -52,6 +52,15 @@
     }
   }
   &__item {
+    position: relative;
+    &:before {
+      content: '';
+      height: 1px;
+      width: 43px;
+      top: 64px;
+      position: absolute;
+      background-color: black;
+    }
     &-head {
       position: relative;
       padding: 45px 0 0 100px;
@@ -76,6 +85,10 @@
     }
     &-location {
       margin-top: 3px;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-body {
       font-size: 12px;
       line-height: 18px;
     }
