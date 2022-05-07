@@ -1,18 +1,22 @@
 .skills {
   padding-top: 120px;
+
   &__title {
     position: relative;
     text-align: center;
     @include before_circle;
+
     &:before {
       top: -6px;
       left: 50%;
       transform: translateX(-50%);
     }
   }
+
   &__subtitle {
     text-align: center;
   }
+
   &__wrapper {
     margin-top: 60px;
     padding-left: 10px;
@@ -23,15 +27,32 @@
     grid-column-gap: 13px;
     grid-row-gap: 13px;
   }
+
   &__item {
     position: relative;
     border: 1px solid black;
     padding: 30px 30px 25px 30px;
+    &-jq {
+      padding: 45px 30px 25px 30px;
+      position: relative;
+      border: 1px solid black;
+    }
+    &-mongo {
+      padding: 38px 30px 25px 30px;
+      position: relative;
+      border: 1px solid black;
+    }
     &-name {
       margin-top: 20px;
     }
+    &-jname {
+      margin-top: 33px;
+    }
+    &-m_name {
+      margin-top: 32px;
+    }
   }
-.slills__descr {
+  .slills__descr {
     margin-top: 15px;
     font-size: 12px;
     line-height: 18px;
