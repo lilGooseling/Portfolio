@@ -58,3 +58,48 @@
     line-height: 18px;
   }
 }
+
+  .skills__wrap {
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 70px);
+    grid-column-gap: 45px;
+    grid-row-gap: 30px;
+}
+  .progress__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    .title {
+      position: absolute;
+      @include before_circle;
+      &:before {
+        content: '';
+        top: -33%;
+      }
+    }
+  }
+  .progress__wrapper-percent {
+    margin-left: 320px;
+  }
+
+  .line__wrapper {
+    width: 100%;
+    position: relative;
+    margin-top: 27px;
+    &-gray {
+      width: 350px;
+      height: 14px;
+      background: #E8E4DE;
+      border-radius: 4px;
+    }
+    &-yellow{
+      position: absolute;
+      top: 0;
+      height: 14px;
+      background: #FFA501;
+      border-radius: 4px;
+    }
+  }
+
