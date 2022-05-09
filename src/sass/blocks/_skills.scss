@@ -73,10 +73,11 @@
     justify-content: space-between;
     .title {
       position: absolute;
+      padding-left: 13px;
       @include before_circle;
       &:before {
         content: '';
-        top: -33%;
+        top: -36%;
       }
     }
   }
