@@ -1,0 +1,30 @@
+.price {
+  margin-top: 60px;
+  &__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 367px);
+    grid-template-rows: repeat(3, 44px);
+    justify-content: space-between;
+    row-gap: 15px;
+    &-item {
+      display: grid;
+      align-content: space-between;
+    }
+    &-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(57px, auto));
+      justify-content: space-between;
+    }
+    &-descr {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+    }
+    &-salary {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+}
