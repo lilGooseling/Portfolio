@@ -16,7 +16,23 @@
       grid-template-columns: repeat(2, minmax(57px, auto));
       justify-content: space-between;
     }
+    &-work {
+      position: relative;
+      padding-left: 25px;
+      &:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        background: $main-color;
+        border-radius: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
     &-descr {
+      padding-left: 25px;
       font-weight: 500;
       font-size: 12px;
       line-height: 18px;
