@@ -1,0 +1,12 @@
+.contacts {
+  padding: 120px 0 91px 0;
+  &__wrapper {
+    padding: 0 35px 0 52px;
+    display: grid;
+    grid-template-columns: 400px 585px;
+    justify-content: space-between;
+  }
+  &__photo {
+    width: 100%;
+  }
+}
