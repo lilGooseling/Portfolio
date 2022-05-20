@@ -30,6 +30,16 @@
       }
     }
   }
+  .resume {
+    .container {
+      max-width: 960px;
+    }
+    &__wrapper {
+      padding: 60px 35px 0 35px;
+      grid-template-columns: repeat(2,400px);
+      column-gap: 100px
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -42,17 +52,38 @@
     .container {
       max-width: 720px;
     }
+
     &__wrapper {
       grid-template-columns: 300px 380px;
     }
+
     &__skills {
       grid-template-columns: 380px;
-      grid-auto-rows: minmax(115px,auto);
+      grid-auto-rows: minmax(115px, auto);
+
       &-item {
         grid-template-columns: 40px 320px;
         column-gap: 20px;
       }
     }
+
+    .title {
+      &_fz36 {
+        font-size: 30px;
+      }
+    }
+  }
+  .resume {
+    .container {
+      max-width: 720px;
+    }
+
+    &__wrapper {
+      padding: 60px 65px 0 85px;
+      grid-template-columns: 500px;
+      row-gap: 60px;
+    }
+
     .title {
       &_fz36 {
         font-size: 30px;
@@ -95,6 +126,17 @@
       }
     }
   }
+  .resume {
+    padding-top: 60px;
+    .container {
+      max-width: 540px;
+    }
+    &__wrapper {
+      padding: 50px 35px 0 35px;
+      grid-template-columns: 450px;
+      row-gap: 60px
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -103,6 +145,7 @@
       width: 250px;
       padding-left: 20px;
     }
+
     &__social {
       margin-top: 90px;
     }
@@ -112,18 +155,22 @@
       width: 300px;
       padding: 0 10px;
     }
+
     .title {
       &_fz48 {
         font-size: 26px;
       }
     }
+
     .hamburger {
       right: 20px;
     }
+
     &__title {
       width: 280px;
       line-height: 36px;
     }
+
     &__btns {
       margin-top: 30px;
     }
@@ -134,15 +181,43 @@
       width: 300px;
       padding: 0 10px;
     }
+
     &__wrapper {
       grid-template: 340px auto auto / 1fr;
     }
+
     &__skills {
       grid-template-columns: 1fr;
+    }
+
+    .title {
+      &_fz36 {
+        font-size: 24px;
+      }
+    }
+  }
+  .resume {
+    padding-top: 40px;
+    .container {
+      width: 300px;
+      padding: 0 10px;
+    }
+    &__wrapper {
+      padding: 40px 12px 0 8px;
+      grid-template-columns: 280px;
+      row-gap: 40px
     }
     .title {
       &_fz36 {
         font-size: 24px;
+      }
+    }
+    .divider {
+      margin: 15px auto 0 auto;
+    }
+    .title {
+      &_fz20 {
+        font-size: 14px;
       }
     }
   }
