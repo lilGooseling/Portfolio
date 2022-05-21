@@ -40,6 +40,26 @@
       column-gap: 100px
     }
   }
+  .skills {
+    .container {
+      max-width: 960px;
+    }
+    &__wrapper {
+      padding-left: 20px;
+      padding-right: 20px;
+      grid-template-columns: repeat(3,270px);
+      grid-auto-rows: 270px;
+      grid-column-gap: 50px;
+      grid-row-gap: 20px;
+    }
+    &__wrap {
+      margin-top: 100px;
+      padding-left: 90px;
+      grid-template-columns: repeat(2,350px);
+      grid-column-gap: 65px;
+      grid-row-gap: 40px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -77,13 +97,33 @@
     .container {
       max-width: 720px;
     }
-
     &__wrapper {
       padding: 60px 65px 0 85px;
       grid-template-columns: 500px;
       row-gap: 60px;
     }
-
+    .title {
+      &_fz36 {
+        font-size: 30px;
+      }
+    }
+  }
+  .skills {
+    .container {
+      max-width: 720px;
+    }
+    &__wrapper {
+      padding-left: 60px;
+      padding-right: 60px;
+      grid-template-columns: repeat(2,270px);
+    }
+    &__wrap {
+      padding-left: 20px;
+      grid-template-columns: repeat(2,300px);
+    }
+    .progress__wrapper-percent {
+      margin-left: 260px;
+    }
     .title {
       &_fz36 {
         font-size: 30px;
@@ -137,6 +177,22 @@
       row-gap: 60px
     }
   }
+  .skills {
+    .container {
+      max-width: 540px;
+    }
+    &__wrapper {
+      padding-left: 135px;
+      padding-right: 135px;
+      grid-template-columns: 270px;
+    }
+    &__wrap {
+      padding-left: 120px;
+      grid-template-columns: 300px;
+      row-gap: 60px;
+      margin-top: 60px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -145,7 +201,6 @@
       width: 250px;
       padding-left: 20px;
     }
-
     &__social {
       margin-top: 90px;
     }
@@ -155,22 +210,18 @@
       width: 300px;
       padding: 0 10px;
     }
-
     .title {
       &_fz48 {
         font-size: 26px;
       }
     }
-
     .hamburger {
       right: 20px;
     }
-
     &__title {
       width: 280px;
       line-height: 36px;
     }
-
     &__btns {
       margin-top: 30px;
     }
@@ -181,15 +232,12 @@
       width: 300px;
       padding: 0 10px;
     }
-
     &__wrapper {
       grid-template: 340px auto auto / 1fr;
     }
-
     &__skills {
       grid-template-columns: 1fr;
     }
-
     .title {
       &_fz36 {
         font-size: 24px;
@@ -219,6 +267,31 @@
       &_fz20 {
         font-size: 14px;
       }
+    }
+  }
+  .skills {
+    .container {
+      width: 300px;
+      padding: 0 10px;
+    }
+    &__wrapper {
+      margin-top: 30px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    &__wrap {
+      padding-left: 0;
+      margin-top: 40px;
+    }
+    .title {
+      &_fz36 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .divider {
+      margin: 15px auto 0 auto;
     }
   }
 }
