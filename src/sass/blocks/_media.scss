@@ -60,6 +60,21 @@
       grid-row-gap: 40px;
     }
   }
+  .portfolio {
+    .container {
+      max-width: 960px;
+    }
+    &__wrapper {
+      .horizontal {
+        grid-row: unset;
+        grid-column: unset;
+      }
+      .vertical {
+        grid-row: unset;
+        grid-column: unset;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px) {
