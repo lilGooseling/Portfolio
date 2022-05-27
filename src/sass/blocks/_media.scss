@@ -87,6 +87,15 @@
       max-width: 960px;
     }
   }
+  .contacts {
+    .container {
+      max-width: 960px;
+    }
+    &__wrapper {
+      padding: 0 15px 0 22px;
+      grid-template-columns: 300px 585px;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -170,7 +179,15 @@
       row-gap: 25px;
     }
   }
-
+  .contacts {
+    padding: 80px 0 91px 0;
+    .container {
+      max-width: 720px;
+    }
+    &__photo {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -254,6 +271,26 @@
       justify-content: center;
     }
   }
+  .contacts {
+    .container {
+      max-width: 540px;
+    }
+    &__wrapper {
+      grid-template-columns: unset;
+      padding: 0 80px 0 22px;
+    }
+    &__descr {
+      form {
+        grid-template: 45px 45px 190px 45px/300px;
+      }
+    }
+    .contacts__input {
+      grid-column: 1/3;
+    }
+    .contacts__btn {
+      font-size: 12px;
+    }
+  }
 }
 
 @media (max-width: 576px) {
@@ -262,6 +299,7 @@
       width: 250px;
       padding-left: 20px;
     }
+
     &__social {
       margin-top: 90px;
     }
@@ -271,18 +309,22 @@
       width: 300px;
       padding: 0 10px;
     }
+
     .title {
       &_fz48 {
         font-size: 26px;
       }
     }
+
     .hamburger {
       right: 20px;
     }
+
     &__title {
       width: 280px;
       line-height: 36px;
     }
+
     &__btns {
       margin-top: 30px;
     }
@@ -293,12 +335,15 @@
       width: 300px;
       padding: 0 10px;
     }
+
     &__wrapper {
       grid-template: 340px auto auto / 1fr;
     }
+
     &__skills {
       grid-template-columns: 1fr;
     }
+
     .title {
       &_fz36 {
         font-size: 24px;
@@ -307,23 +352,28 @@
   }
   .resume {
     padding-top: 40px;
+
     .container {
       width: 300px;
       padding: 0 10px;
     }
+
     &__wrapper {
       padding: 40px 12px 0 8px;
       grid-template-columns: 280px;
       row-gap: 40px
     }
+
     .title {
       &_fz36 {
         font-size: 24px;
       }
     }
+
     .divider {
       margin: 15px auto 0 auto;
     }
+
     .title {
       &_fz20 {
         font-size: 14px;
@@ -335,15 +385,18 @@
       width: 300px;
       padding: 0 10px;
     }
+
     &__wrapper {
       margin-top: 30px;
       padding-left: 15px;
       padding-right: 15px;
     }
+
     &__wrap {
       padding-left: 0;
       margin-top: 40px;
     }
+
     .title {
       &_fz36 {
         margin-top: 20px;
@@ -351,6 +404,7 @@
         line-height: 36px;
       }
     }
+
     .divider {
       margin: 15px auto 0 auto;
     }
@@ -360,6 +414,7 @@
       width: 300px;
       padding: 0 10px;
     }
+
     .title {
       &_fz36 {
         margin-top: 20px;
@@ -367,6 +422,7 @@
         line-height: 36px;
       }
     }
+
     .divider {
       margin: 15px auto 0 auto;
     }
@@ -376,17 +432,50 @@
       width: 300px;
       padding: 0 10px;
     }
+
     &__list {
       margin-top: 20px;
       grid-template-columns: repeat(auto-fit, 300px);
+
       &-wrapper {
         .title_fz14 {
           font-size: 13px;
         }
       }
+
       &-salary {
         font-size: 13px;
       }
+    }
+  }
+  .contacts {
+    padding: 40px 0 80px 0;
+    .container {
+      width: 300px;
+      padding: 0 10px;
+    }
+    &__wrapper {
+      grid-template-columns: 300px;
+      padding: 0;
+    }
+    &__descr {
+      form {
+        grid-template: 45px 45px 190px 45px/auto;
+      }
+    }
+    .title {
+      &_fz36 {
+        margin-top: 20px;
+        font-size: 24px;
+        line-height: 36px;
+      }
+    }
+    .divider {
+      margin-top: 15px;
+    }
+    &__triggers {
+      grid-template-columns: repeat(2, auto);
+      column-gap: 5px;
     }
   }
 }
